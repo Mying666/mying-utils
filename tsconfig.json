@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // 允许未执行的代码不报错
+    "allowUnreachableCode": true,
+    // 严格模式, 强烈建议开启
+    "strict": true,
+    // 支持别名导入:
+    "esModuleInterop": true,
+    // 目标js的版本
+    "target": "es5",
+    // 删除注释
+    "removeComments": true,
+
+    "noEmitHelpers": true,
+    // 保留 const和 enum声明
+    "preserveConstEnums": false,
+    // 生成sourceMap
+    "sourceMap": true,
+    // 目标文件所在路径
+    "outDir": "./types",
+    // 编译过程中需要引入的库文件的列表
+    "lib": [
+      "dom",
+      "es7",
+      "ES2015.Promise"
+    ],
+    // 额外支持解构/forof等功能
+    "downlevelIteration": true,
+    // 是否生成声明文件
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    // 声明文件路径
+    "declarationDir": "./types",
+    // 此处设置为node,才能解析import xx from 'xx'
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
